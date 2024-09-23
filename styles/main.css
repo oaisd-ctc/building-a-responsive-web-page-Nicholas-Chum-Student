@@ -1,0 +1,71 @@
+*{
+    margin: 5px;
+    font-family: Nerko One;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkorchid;
+}
+
+#top{
+    background-color: lightgreen;
+    display: block;
+    width: 110%;
+}
+
+nav a{
+    flex: 1;
+}
+
+nav{
+    display: flex;
+    text-align: center;
+}
+
+a{
+    padding: 0px
+}
+
+section{
+    width: 100%;
+}
+
+section>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightcoral;
+    margin-bottom: 15px;
+}
+
+section>div>p{
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width: 800px) {
+    section>div{
+        background-color: darksalmon;
+    }
+    body{
+        font-size: 30px;
+        background-color: lightskyblue;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section>div{
+        background-color: gold;
+    }
+    body{
+        font-size: 20px;
+        background-color: lightgray;
+    }
+    nav{
+       display: flex;
+       flex-direction: column; 
+       align-items: center;
+    }
+}
